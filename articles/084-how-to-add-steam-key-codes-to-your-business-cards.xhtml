@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>如何把 Steam Key 码加到你的名片上</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  
+</head>
+<body>
+<header class="site-header compact" id="top">
+  <div class="brand"><a class="mark linkmark" href="../index.xhtml">HTMAG</a><div><p class="eyebrow">本地 XHTML 站点</p><h1>文章</h1></div></div>
+  <nav class="top-nav"><a href="../index.xhtml">首页</a><a href="../overview.xhtml">网站架构</a><a href="../guide.xhtml">营销总论</a><a href="../index.xhtml#topics">主题目录</a><a href="../index.xhtml#all-articles">全部文章</a></nav>
+</header>
+<main class="layout article-layout">
+  <aside class="side-card">
+    <a class="back-link" href="../index.xhtml#all-articles">返回文章总目录</a>
+    <a class="back-link" href="../topics/steam-platform.xhtml">返回：Steam 平台机制</a>
+    <div class="mini-meta">
+      <p>理解 Steam 如何用标签、点击、愿望单和评价分发流量。</p>
+      <p>发布日期：2024-03-04</p>
+      <p>文章编号：84</p>
+    </div>
+    <div class="article-nav"><a class="button ghost" href="083-gdc-2024.xhtml">上一篇</a><a class="button ghost" href="085-sustainable-game-development-lessons.xhtml">下一篇</a></div>
+  </aside>
+  <article class="article-card">
+    <p class="eyebrow">Steam 页面与平台曝光 / Steam 平台机制</p>
+    <h1>如何把 Steam Key 码加到你的名片上</h1>
+    <p class="original-title">原文标题：How to add Steam Key codes to your business cards</p>
+    <p class="source-link"><a href="https://howtomarketagame.com/2024/03/04/how-to-add-steam-key-codes-to-your-business-cards/">打开原文</a></p>
+    <div class="tags"><span class="tag">Steam 平台与商店机制</span> <span class="tag">数据基准与行业观察</span> <span class="tag">发售节奏与窗口</span></div>
+    <section>
+      <h2>三句话概括</h2>
+      <p>文章介绍了如何把唯一的 Steam Key 印在名片背面，用于展会销售、赠送或向媒体、主播、发行商展示游戏。流程包括从 Steamworks 下载 Key、用表格制作 CSV、在 Photoshop 中用变量文本批量生成图片，再通过 <a href="https://www.moo.com/us/">moo.com</a> 印刷多款不同背面的名片。作者还提醒 Key 字号要大、避免黑底小字，并注意安全裁切区域。</p>
+    </section>
+    <section>
+      <h2>浓缩短文</h2>
+      <p>这篇文章是一份非常实用的展会物料教程，目标是在 GDC 或其他线下游戏展会上，把每一张名片都做成一份可兑换游戏的 Steam Key。这样拿到名片的人不仅获得联系方式，还能直接解锁一份游戏。作者认为这比把 Key 打在小贴纸上再手工贴到名片背面更专业，因为 Key 可以直接印在卡片上，并与名片整体字体、颜色和视觉风格统一。</p>
+<p>这样做有两个用途。一个用途是现场销售。开发者如果在展位上，可以把自己的旧作或已发布游戏以实体卡片形式卖给路过玩家，对方付现金，你给一张印着 Steam Key 的名片。Steam 允许开发者免费申请 Key 并收费出售，不过用 Key 激活游戏后留下的评测不会计入 Steam 商店页的评测总数，所以不能靠这种方法快速凑够 10 条有效评测。作者还半开玩笑地说，经济拮据的独立开发者甚至可以在酒吧里用“请我一杯啤酒，我送你一份游戏”的方式交换。另一个用途是直接赠送。对媒体、影响者、发行商或自己敬佩的开发者说“你好，我是 Chris，这是一份我的游戏”，会比普通名片更容易被保留，也更有记忆点。</p>
+<p>前提条件并不复杂。你需要有一款已经上传到 Steam 的游戏，需要能使用 Photoshop，还需要一个支持同一批名片印不同背面设计的印刷服务。作者使用 <a href="https://www.moo.com/us/">moo.com</a>，因为质量稳定，并且支持 unique cards。需要注意的是，moo.com 一次印刷中默认只能有 50 种不同的卡片背面，超过后会加钱，但额外费用不算太高。</p>
+<p>第一步是在 Steamworks 里下载 Steam Key。登录 Steamworks 后，点击 Request Steam Product Keys。如果要赠送已经发售的游戏，选择 Default Release Key 下的 Giveaway Keys；Steam 会提醒不要一次申请太多，作者通常一次只申请 100 到 200 个。如果游戏还没发售，则使用 Release State Override。之后导出 CSV，就会得到一组类似 2GAZQ-R8FTM-A8YJW 格式的 Key。文章中的这个例子是作者随手敲出来的随机字符串，并非真实可用 Key。</p>
+<p>第二步是用 Google Docs 或 Microsoft Excel 制作给 Photoshop 使用的 CSV。新建一个表格，创建一列，列名写成 KEY_CODES，然后把所有 Steam Key 粘贴到这一列下面，最后导出为 .CSV 文件。这个表头非常重要，因为后面 Photoshop 的变量文本会用它来匹配数据。</p>
+<p>第三步是在 Photoshop 中设计名片背面。一张常见名片的尺寸是 1038 x 696 像素，300ppi。如果不擅长设计，作者建议先用 Canva 搜索名片模板，很多模板免费。设计图中需要创建一个文本图层，放置将被替换成 Steam Key 的占位文字，例如 ####-####-####-####，并提前设好最终想要的字体、字号和颜色。</p>
+<p>接下来要把这个文本图层设置为变量。确保 Photoshop 当前使用移动工具，并且没有选中具体对象，然后进入 Image &gt; Variables &gt; Define。选择刚才用于显示 Key 的文本图层，勾选 Text Replacement，并输入 KEY_CODES。这个名字必须和 CSV 第一行的表头完全一致。确认后，再进入 Image &gt; Variables &gt; Data Set，点击 Import，选择刚才导出的 .csv 文件。导入成功后，可以用对话框里的箭头在不同 Key 之间切换。再执行 Image &gt; Apply Data Set，占位文字就会变成 CSV 中的一条 Key。此时画面上只会看到其中一条数据，这是正常的，批量生成会在下一步完成。</p>
+<p>第四步是批量导出 PSD。点击 File &gt; Export &gt; Data Sets as Files，选择输出文件夹，文件名设置保持默认即可。Photoshop 这一步只能导出 .psd，不能直接生成 .jpg。导出完成后，输出文件夹里应该会有大量 PSD 文件，每个文件都对应一条不同的 Steam Key。作者建议打开其中几个检查，确认不同 Key 已经正确应用到不同文件中。</p>
+<p>第五步是把 PSD 批量转换成 JPG，因为名片印刷网站需要图片格式。进入 File &gt; Scripts &gt; Image Processor，在第一项选择刚才存放 PSD 的文件夹，在第二项选择新的输出文件夹，第三项选择输出文件类型为 JPG，然后运行。Photoshop 会遍历文件夹中所有 PSD，并生成对应 JPG。到这一步，你就拥有了一整个文件夹的名片背面图片，每张图都有唯一 Steam Key。</p>
+<p>最后一步是在 <a href="https://www.moo.com/us/">moo.com</a> 上印刷。选择 Business Cards &gt; Original Business Cards，作者强烈建议使用标准尺寸，不要做方形或迷你名片，因为这类异形卡片很难和别人收到的大量普通名片一起收纳。纸张和圆角可按喜好选择，作者偏好哑光，认为亮光看起来廉价。然后选择 Upload a full design，在背面卡片区域点击 Add a new design，再批量上传所有带 Key 的 JPG。名片正面只需要上传一张统一设计，因为所有卡片正面相同。完成后加入购物车即可。</p>
+<p>作者最后给了几个印刷经验。Steam Key 的字号要比你想象中更大，因为名片很小，读起来容易吃力。不要做黑底白字或黑底彩字，即使用好打印机，油墨也可能轻微扩散，导致文字难读；而且深色名片不方便别人写备注，例如“展会上见过，很有意思，值得联系”。还要特别注意安全裁切区域，名片实际裁切会有轻微误差，如果 Key 的第一位数字被切掉，这张卡就失去意义了。</p>
+    </section>
+    <section class="related-links">
+  <h2>原文提及链接</h2>
+  <ul><li><a href="https://youtu.be/mXftSSeqvKQ">I think I first learned it from this youtube video th…</a></li>
+<li><a href="https://www.moo.com/us/">moo.com</a></li>
+<li><a href="https://www.canva.com/templates/?query=business-card">You can search just for business card templates (many…</a></li></ul>
+</section>
+    <div class="bottom-nav"><a class="button ghost" href="083-gdc-2024.xhtml">上一篇</a><a class="button" href="../index.xhtml#topics">回到主题目录</a><a class="button ghost" href="085-sustainable-game-development-lessons.xhtml">下一篇</a></div>
+  </article>
+</main>
+</body>
+</html>

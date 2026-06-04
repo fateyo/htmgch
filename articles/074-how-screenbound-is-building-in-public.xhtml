@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>《Screenbound》如何公开开发</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  
+</head>
+<body>
+<header class="site-header compact" id="top">
+  <div class="brand"><a class="mark linkmark" href="../index.xhtml">HTMAG</a><div><p class="eyebrow">本地 XHTML 站点</p><h1>文章</h1></div></div>
+  <nav class="top-nav"><a href="../index.xhtml">首页</a><a href="../overview.xhtml">网站架构</a><a href="../guide.xhtml">营销总论</a><a href="../index.xhtml#topics">主题目录</a><a href="../index.xhtml#all-articles">全部文章</a></nav>
+</header>
+<main class="layout article-layout">
+  <aside class="side-card">
+    <a class="back-link" href="../index.xhtml#all-articles">返回文章总目录</a>
+    <a class="back-link" href="../topics/social.xhtml">返回：社媒传播</a>
+    <div class="mini-meta">
+      <p>让内容被陌生玩家快速理解和转发。</p>
+      <p>发布日期：2024-05-27</p>
+      <p>文章编号：74</p>
+    </div>
+    <div class="article-nav"><a class="button ghost" href="073-what-is-wishlist-velocity-and-is-it-a-better-indicator-of-success.xhtml">上一篇</a><a class="button ghost" href="075-do-steam-players-like-hard-games-or-accessible-games.xhtml">下一篇</a></div>
+  </aside>
+  <article class="article-card">
+    <p class="eyebrow">社媒、邮件与社区 / 社媒传播</p>
+    <h1>《Screenbound》如何公开开发</h1>
+    <p class="original-title">原文标题：How Screenbound is Building in Public</p>
+    <p class="source-link"><a href="https://howtomarketagame.com/2024/05/27/how-screenbound-is-building-in-public/">打开原文</a></p>
+    <div class="tags"><span class="tag">社媒传播</span> <span class="tag">Steam 平台与商店机制</span> <span class="tag">邮件列表与私域</span> <span class="tag">愿望单增长与质量</span> <span class="tag">发售节奏与窗口</span></div>
+    <section>
+      <h2>三句话概括</h2>
+      <p>文章介绍《<a href="https://store.steampowered.com/app/2805070/Screenbound/">Screenbound</a>》如何把原型开发和社交媒体营销结合起来，在尚未完全确定游戏形态前就获得大量关注。这个“双人团队”的“5D 平台游戏”同时控制 3D 第一人称环境和 2D Game Boy 风格横版角色，已获得超过 50,000 个 Steam 愿望单和接近 1 亿次社交浏览。文章也指出，这种公开开发有巨大回报，也有玩法能否真正成立的风险。</p>
+    </section>
+    <section>
+      <h2>浓缩短文</h2>
+      <p>这篇文章由 Ryan K. Rigney 撰写，讨论《<a href="https://store.steampowered.com/app/2805070/Screenbound/">Screenbound</a>》这个少见案例：游戏还处在原型和探索阶段，营销却已经和开发过程紧密绑在一起。通常来说，开发者需要先做出一款游戏，才可能期待营销取得明显效果。但《Screenbound》例外，它的开发者公开承认自己还没有完全弄清这款游戏最终会是什么样，而是每天尝试疯狂点子，把结果发到 <a href="https://www.tiktok.com/@crescentmoongames">TikTok</a> 和 X 上。</p>
+<p>《<a href="https://store.steampowered.com/app/2805070/Screenbound/">Screenbound</a>》的核心概念被团队称为“5D 平台游戏”：玩家同时控制 3D 第一人称环境中的角色，以及一个 2D 横版 Game Boy 风格屏幕里的对应角色。玩家在 3D 世界里手持一个掌机，而掌机屏幕里又有一个 2D 角色在行动。这个设定足够让社交媒体上半睡半醒刷信息流的人停下来想一句：“等等，这是什么？”</p>
+<p>这个方法已经产生明显效果。开发者 Josh Presseisen 表示，《<a href="https://store.steampowered.com/app/2805070/Screenbound/">Screenbound</a>》在 Steam 上获得超过 50,000 个愿望单，所有社交渠道浏览量接近 1 亿次。Presseisen 是 Crescent Moon Games 的负责人，2010 年发布过类似《Morrowind》的 iOS 动作 RPG《Ravensword: The Fallen King》，游戏登上 App Store 榜单并卖得不错，支撑了后续《Aralon: Sword and Shadow》和更大规模的《Ravensword》续作。过去 15 年里，Crescent Moon 在移动平台发行了超过 100 款游戏，其中 20 款登陆 Steam，约 6 款登陆主机。</p>
+<p>Presseisen 与《<a href="https://store.steampowered.com/app/2805070/Screenbound/">Screenbound</a>》共同负责人 Kyle McKeever 的合作也有多年历史。McKeever 最初通过在 Unity Asset Store 出售 2D 游戏 starter kit 赚外快，并自学编程。Presseisen 在 Unity Asset Store 上发现了一个不错的 2D 像素美术包，联系到 McKeever，两人随后合作了奇特的《<a href="https://apps.apple.com/us/app/the-deer-god/id1014505645">The Deer God</a>》。之后他们又一起做了 2016 年地牢游戏《<a href="https://apps.apple.com/us/app/hammer-bomb/id1074006236?platform=iphone">Hammer Bomb</a>》和 2017 年 FPS 冒险游戏《<a href="https://store.steampowered.com/app/661740/Morphite/">Morphite</a>》。McKeever 后来也参与了 2020 年独立热门作品《<a href="https://store.steampowered.com/app/1011670/Totally_Reliable_Delivery_Service/">Totally Reliable Delivery Service</a>》。去年，Presseisen 带着《Screenbound》的早期原型重新找到 McKeever。</p>
+<p>当时游戏的基本概念已经存在，但画面很糟，想法也没有完全展开。两人开始实验。最初它像一个 endless runner，后来转向类似《Super Mario》的真实关卡测试。McKeever 负责实现功能，Presseisen 则不断把美术资源塞进项目。1 月 20 日，Presseisen 在 Crescent Moon Games 官方 X 账号上发布了第一段《<a href="https://store.steampowered.com/app/2805070/Screenbound/">Screenbound</a>》玩法视频，获得约 800 个赞。几天后，他又把片段发到 <a href="https://www.tiktok.com/@crescentmoongames">TikTok</a>，反应突然爆发：超过 24,000 个赞，343,000 次浏览，而这个账号此前没有任何帖子超过 2,000 次浏览。</p>
+<p>Presseisen 起初很困惑，因为这比他其他游戏高出约 100 倍。之后他每发一个新东西，数据就更大，并持续滚雪球。到 3 月初，《<a href="https://store.steampowered.com/app/2805070/Screenbound/">Screenbound</a>》已经经常在社交媒体上获得数百万浏览。内容创作者 Jake Lucky 发的一条相关 tweet 获得超过 80,000 个赞。很快，IGN 联系团队，希望制作相关视频。Presseisen 说游戏已经安排在今年夏天出现在 6 个不同 showcase 中，包括 Day of the Devs、Future Games Show 和 OTK Games Expo。这也意味着团队要制作 6 支不同预告片。等这些工作完成后，他们才会真正坐下来决定这款游戏到底是什么。</p>
+<p>Steam 页面上线是一个艰难决定。团队在 3 月 25 日发布了官方 Steam 页面。当时他们内容很有限，只有一些短视频，几乎没有足够 polished 的素材适合放在 Steam 页面上。但多位人士提醒他们，如果社交帖子已经病毒式传播却没有 Steam 页面，会错失大量愿望单。Presseisen 认为最后这个决定是正确的。</p>
+<p>《<a href="https://store.steampowered.com/app/2805070/Screenbound/">Screenbound</a>》的成功不只是因为一个噱头。团队很懂自己正在执行的公开开发打法。他们持续展示一些功能，即使这些功能未必会进入最终游戏，只要它们适合做成社交帖子。例如“能不能运行 Doom”的内容，就是回应真实粉丝请求而制作的。每发一个素材，团队都会从玩家那里收集更多离奇建议。即使只是把掌机外观改得更像 Game Boy Advance SP，并展示可折叠翻盖结构，也能让游戏在社交平台上再次显得新鲜。</p>
+<p>他们并不是单纯“公开开发”，也在带粉丝经历一个包含笑话、玩梗和岔路的过程，不要求每个点子都被严肃对待。游戏在 X 上的表现似乎比 <a href="https://www.tiktok.com/@crescentmoongames">TikTok</a> 更好，Presseisen 也说不清原因，但团队选择顺势加码。虽然他过去几乎都用 Crescent Moon Games 账号宣传游戏，这次却为《<a href="https://store.steampowered.com/app/2805070/Screenbound/">Screenbound</a>》单独建立了 X 账号，因为他认为需要为这款具体游戏建立独立粉丝群；它不只是他发行的游戏，也是他与 McKeever 共同开发的游戏。</p>
+<p>团队也会为了 showcase 保留一些新功能，不急着全发到社交媒体上。Presseisen 在 X 上说，他们很想展示正在做的新功能，但必须留给即将到来的展会。这说明他们并非毫无节制地公开一切，而是在社交热度和大型节点之间做取舍。</p>
+<p>游戏定位本身也很聪明。“5D 平台游戏”这个半开玩笑的电梯宣传语很短，也容易记住，因为它等于 3D 游戏加 2D 游戏。虽然 3D 画面相对简单，但游戏内掌机的精细度高、视觉上有趣。核心设定强到非游戏账号 <a href="https://x.com/weirddalle/status/1787424968692633813">No Context Memes</a> 也能用一句话讲明白。与此同时，游戏背后确实在推进技术建设。McKeever 做了一个自定义关卡编辑器，可以用简单的 2D 界面设计相互连接的 2D 和 3D 环境，并程序化扩展成 3D 空间。他表示，随着更多资源和内容加入编辑器，关卡设计会变得非常快。Presseisen 甚至考虑未来让玩家使用这个编辑器。</p>
+<p>风险也很明显。社交媒体上大量点赞和浏览，未必一定转化为真实玩家。更关键的问题是，同时玩两个游戏到底好不好玩，还是只会分散注意力。Presseisen 和 McKeever 都承认，玩家需要适应基本移动方式。当玩家用左摇杆移动时，3D 中可能是在向前走，2D 中却是在向右移动。玩家必须同时关注掌机屏幕和 3D 背景，如果 5 秒钟不看屏幕，就可能被敌人击中。Presseisen 认为玩家大约玩 30 秒后就能进入状态。</p>
+<p>公开开发的好处是团队在核心形态完全确定前已经卖出了一个“梦想”；坏处也是他们真的还没把核心完全定下来。Presseisen 说目前它大概是某种 3D 解谜平台冒险，但游戏过程中会发生什么仍在变化。他们讨论过让玩家把其他卡带插入设备，切换成类似俯视角《Zelda》的玩法，甚至赛车游戏。McKeever 则认为，随着开发推进，他们不断发现 2D 到 3D 之间奇怪又有趣的机制，这不只是一个简单 gimmick。</p>
+<p>好消息是，这两位开发者都做过大量游戏，知道如何把项目做完。他们估计《<a href="https://store.steampowered.com/app/2805070/Screenbound/">Screenbound</a>》会在“明年某个时候”完成并发布。在此之前，团队会继续用社交媒体玩梗、展示实验内容，并持续推动愿望单增长。</p>
+    </section>
+    <section class="related-links">
+  <h2>原文提及链接</h2>
+  <ul><li><a href="https://www.pushtotalk.gg/">Push to Talk</a></li>
+<li><a href="https://store.steampowered.com/app/2805070/Screenbound/">Screenbound</a></li>
+<li><a href="https://www.crescentmoongames.com/">over 100 titles</a></li>
+<li><a href="https://apps.apple.com/us/app/the-deer-god/id1014505645">The Deer God</a></li>
+<li><a href="https://apps.apple.com/us/app/hammer-bomb/id1074006236?platform=iphone">Hammer Bomb</a></li>
+<li><a href="https://store.steampowered.com/app/661740/Morphite/">Morphite</a></li>
+<li><a href="https://store.steampowered.com/app/1011670/Totally_Reliable_Delivery_Service/">Totally Reliable Delivery Service</a></li>
+<li><a href="https://x.com/CM_Games/status/1748714451589529891">the first gameplay clip of Screenbound</a></li>
+<li><a href="https://www.tiktok.com/@crescentmoongames/video/7327444644416245038">another clip on TikTok</a></li>
+<li><a href="https://x.com/JakeSucky/status/1772648122524577939">A tweet from content creator Jake Lucky</a></li>
+<li><a href="https://x.com/Screenbound/status/1788914823633219992">features that may or may not make it</a></li>
+<li><a href="https://www.tiktok.com/@crescentmoongames/video/7332683432016956718">“can it play Doom ” post</a></li>
+<li><a href="https://x.com/Screenbound/status/1774160053747994639">This post</a></li>
+<li><a href="https://x.com/Screenbound/status/1786729205864022248">a post on X</a></li>
+<li><a href="https://x.com/weirddalle/status/1787424968692633813">No Context Memes</a></li>
+<li><a href="https://x.com/IGN/status/1775179168952565909">this video they put together for IGN</a></li>
+<li><a href="https://store.steampowered.com/app/2805070/Screenbound/">on Steam</a></li>
+<li><a href="https://x.com/Screenbound/">on X</a></li>
+<li><a href="https://www.tiktok.com/@crescentmoongames">TikTok</a></li></ul>
+</section>
+    <div class="bottom-nav"><a class="button ghost" href="073-what-is-wishlist-velocity-and-is-it-a-better-indicator-of-success.xhtml">上一篇</a><a class="button" href="../index.xhtml#topics">回到主题目录</a><a class="button ghost" href="075-do-steam-players-like-hard-games-or-accessible-games.xhtml">下一篇</a></div>
+  </article>
+</main>
+</body>
+</html>
