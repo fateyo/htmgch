@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9月8日《City Tuesday》开发进展</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  
+</head>
+<body>
+<header class="site-header compact" id="top">
+  <div class="brand"><a class="mark linkmark" href="../index.xhtml">HTMAG</a><div><p class="eyebrow">本地 XHTML 站点</p><h1>文章</h1></div></div>
+  <nav class="top-nav"><a href="../index.xhtml">首页</a><a href="../overview.xhtml">网站架构</a><a href="../guide.xhtml">营销总论</a><a href="../index.xhtml#topics">主题目录</a><a href="../index.xhtml#all-articles">全部文章</a></nav>
+</header>
+<main class="layout article-layout">
+  <aside class="side-card">
+    <a class="back-link" href="../index.xhtml#all-articles">返回文章总目录</a>
+    <a class="back-link" href="../topics/other.xhtml">返回：综合与其他</a>
+    <div class="mini-meta">
+      <p>不容易归入单一主题的文章。</p>
+      <p>发布日期：2011-09-08</p>
+      <p>文章编号：309</p>
+    </div>
+    <div class="article-nav"><a class="button ghost" href="308-creator-intensive-content.xhtml">上一篇</a><a class="button ghost" href="310-72.xhtml">下一篇</a></div>
+  </aside>
+  <article class="article-card">
+    <p class="eyebrow">综合与其他 / 综合与其他</p>
+    <h1>9月8日《City Tuesday》开发进展</h1>
+    <p class="original-title">原文标题：City Tuesday progress for September 8th</p>
+    <p class="source-link"><a href="https://howtomarketagame.com/2011/09/08/city-tuesday-progress-for-september-8th/">打开原文</a></p>
+    <div class="tags"><span class="tag">独立游戏营销综合</span></div>
+    <section>
+      <h2>三句话概括</h2>
+      <p>作者记录了在 IGDA 月会试玩《City Tuesday》后得到的大量反馈。问题集中在提示信息、炸弹收集、地图引导、时间加速、环境交互、敌人与训练关设计上。文章展示了一个时间循环解谜游戏在可读性、教学和玩家意图引导上的具体打磨过程。</p>
+    </section>
+    <section>
+      <h2>浓缩短文</h2>
+      <p>作者参加了当地 International Game Developers Association 的月度聚会，当晚主题是试玩测试，开发者可以带来自己的游戏，让附近同行现场体验并给反馈。对《City Tuesday》来说，这次测试让人感到谦卑，但作者形容测试后的感觉像完成了一次高强度锻炼：游戏被全面检查，结束后反而更强壮。</p>
+<p>最先暴露的问题是 tooltips，也就是游戏中的提示文字。玩家觉得提示停留时间太短，来不及注意或读完；如果错过，也没有办法重新触发。更大的问题是提示的性质不清楚，玩家分不出它只是背景笑话，还是解谜所需的关键信息。他们还疑惑为什么有些角色有提示、有些没有，触发条件也不明确。好消息是，玩家喜欢这些提示，觉得它们有趣。作者给出的解决方案是给提示做颜色编码，例如蓝色或红色代表重要信息，也可以加重要图标，普通背景信息则用黑色；同时允许玩家按 X 重新弹出最近一条提示，并让每个人都有提示。</p>
+<p>炸弹系统也需要更清晰。玩家搞不清哪些炸弹对应哪些区域，因此作者考虑让炸弹按顺序排列，比如第 1 区发现的炸弹紧挨着第 3 区发现的炸弹。玩家捡到炸弹后，也不清楚总数如何变化，所以需要一个动画，把炸弹移动到顶部栏，明确显示“已收集”。地图方面，游戏需要鼓励玩家探索整座城市。作者考虑让长时间未到访的屏幕逐渐淡出，用 2 分钟或 5 分钟的标记暗示玩家从没去过那里；在早期 0 到 4 号屏幕中，让大量角色从边缘进出，提醒玩家可以切换到下一屏；并显示哪些关卡到过、哪些还没去过。</p>
+<p>测试还显示，玩家在 world 1-4 停留很久却没发现太多东西，因此那里应该放一个非常容易找到的炸弹。相反，玩家会快速穿过 5-12，因为内容不够密集。作者还想到要做一张城市人物图表：如果玩家知道某个人的一部分事实，就显示半填充人物；如果读完全部信息，就显示完整人物；选中某人后列出其所有提示，未读内容用“???”表示。</p>
+<p>《City Tuesday》的时间加速机制也让玩家感到不够明确。作者计划把时间增量设为 1、2、8，并用 VHS 快进线、音效、模糊或暗角表现时间正在变快。有人建议时间加速时角色也跑得更快。作者认为每个屏幕都应有能体现快进的背景动画，比如跷跷板也随之加速。</p>
+<p>环境交互方面，玩家一直尝试进入门，但游戏并不允许。作者考虑在玩家对门按“使用”时播放“bum-bum”或“nah-nah”之类的反馈音。玩家也不断试图进入隧道，因此隧道颜色可能要变暗，并加图标说明那是火车通道，不是玩家通道。作者还提出给所有可交互物体使用统一提示图标，例如一个 X 按钮弹出标识。</p>
+<p>敌对守卫和坏人也需要更强的表达。玩家撞到带星号的警卫时，不明白发生了什么，也不知道为什么失败。作者考虑为每种遭遇写独特死亡界面，例如这里显示“不要骚扰保安，你永远赢不了”，甚至提示不要骚扰或试图跳过保安。玩家看到坏人时也不会马上理解“他是坏人”，所以可以用提示写出“shadow Thorn Initiate #1258”，并在训练环节中提前说明他们和放置炸弹有关。有人还会在坏人放下炸弹后试图攻击他，解决办法是让坏人跑得快到无法追上，或者变灰、淡出；但坏人的可见性仍有价值，因为他们本身是炸弹被放置地点和方向的线索。</p>
+<p>最后，作者意识到游戏需要一个专门的训练区域，教玩家如何与世界互动。训练要说明提示可能只是背景，也可能是重要线索；重要信息可以用蓝色或其他颜色区分。训练还要告诉玩家可以吓跑坏人，但不可能杀死他们，并设计一些基于 30 秒循环的小型单屏谜题，让玩家学会观察时间循环中会发生什么。银行抢劫谜题也需要调整：搬炸弹和钱的人在拿钱时应进入攻击状态，避免玩家一直骚扰；应更早展示银行守卫和路过女性的互动，比如女性经过时守卫会放下袋子去搭讪；最好让玩家必须主动行动才能让守卫放下袋子。作者设想可以有两张长椅，玩家把垃圾从垃圾桶拿出来撒在其中一张上，让女性不坐那里，转而坐到守卫路径上的另一张。测试中有人偶然解出了银行抢劫，作者因此认为谜题要更依赖玩家主动设计，而不是纯粹撞运气。</p>
+    </section>
+    
+    <div class="bottom-nav"><a class="button ghost" href="308-creator-intensive-content.xhtml">上一篇</a><a class="button" href="../index.xhtml#topics">回到主题目录</a><a class="button ghost" href="310-72.xhtml">下一篇</a></div>
+  </article>
+</main>
+</body>
+</html>

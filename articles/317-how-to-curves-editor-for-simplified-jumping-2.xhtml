@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>教程：用曲线编辑器简化跳跃</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  
+</head>
+<body>
+<header class="site-header compact" id="top">
+  <div class="brand"><a class="mark linkmark" href="../index.xhtml">HTMAG</a><div><p class="eyebrow">本地 XHTML 站点</p><h1>文章</h1></div></div>
+  <nav class="top-nav"><a href="../index.xhtml">首页</a><a href="../overview.xhtml">网站架构</a><a href="../guide.xhtml">营销总论</a><a href="../index.xhtml#topics">主题目录</a><a href="../index.xhtml#all-articles">全部文章</a></nav>
+</header>
+<main class="layout article-layout">
+  <aside class="side-card">
+    <a class="back-link" href="../index.xhtml#all-articles">返回文章总目录</a>
+    <a class="back-link" href="../topics/other.xhtml">返回：综合与其他</a>
+    <div class="mini-meta">
+      <p>不容易归入单一主题的文章。</p>
+      <p>发布日期：2011-04-19</p>
+      <p>文章编号：317</p>
+    </div>
+    <div class="article-nav"><a class="button ghost" href="316-17.xhtml">上一篇</a><a class="button ghost" href="318-get-the-thing-out-2.xhtml">下一篇</a></div>
+  </aside>
+  <article class="article-card">
+    <p class="eyebrow">综合与其他 / 综合与其他</p>
+    <h1>教程：用曲线编辑器简化跳跃</h1>
+    <p class="original-title">原文标题：HOW TO: Curves editor for simplified jumping</p>
+    <p class="source-link"><a href="https://howtomarketagame.com/2011/04/19/how-to-curves-editor-for-simplified-jumping-2/">打开原文</a></p>
+    <div class="tags"><span class="tag">独立游戏营销综合</span></div>
+    <section>
+      <h2>三句话概括</h2>
+      <p>文章是一篇 XNA 教程，讲如何用 App Hub 提供的 curves editor 为平台游戏制作非真实物理的跳跃曲线。作者解释了传统跳跃通常依靠向上速度与重力计算，而《Pitfall!》式跳跃可以用正弦波、抛物线或手绘曲线函数实现。教程具体说明了下载、构建曲线编辑器、保存曲线、在项目内容管线中设置 XML，并在代码中用 Curve.Evaluate 调整角色 Y 坐标。</p>
+    </section>
+    <section>
+      <h2>浓缩短文</h2>
+      <p>现代平台游戏里，角色跳跃的常见算法通常是：玩家按下跳跃键时，给角色一个向上的瞬时速度；之后每个时钟 tick 都把重力速度作用到这个向上运动上，让角色逐渐变慢，直到向上速度降为零。此时角色到达跳跃最高点，然后在同一套重力计算下向下加速返回地面。这个模型很优雅，虽然很多游戏里的跳跃高度并不现实，但它符合地球人对重力的基本直觉，因为我们生活在 9.81 m/s² 的重力加速度下。</p>
+<p>但如果开发者并不想完美模拟现实，而是想让角色沿着一种没有加速度的非真实弧线跳跃，问题就不同了。像《Pitfall!》这样的游戏会让角色沿着一个非常干净的弧线弹出。实现这种人工跳跃的一种办法，是写一个函数：玩家按下跳跃键后，每个时钟 tick 都把经过的时间传给这个函数，函数输出角色应该处在的高度。这个跳跃函数可能是正弦波，也可能是抛物线。</p>
+<p>问题在于，跳跃需要细微调校。开发者往往要弯曲、拉伸曲线，让跳跃看起来“对”。如果只靠修改函数变量，会变成很繁琐的反复试错。作者因此引入 curves editor，也就是曲线编辑器。App Hub 网站的工程师提供了一个工具，可以让开发者直接绘制曲线，并由曲线生成函数。文章的目标就是说明如何把这个工具设置起来，用于控制角色跳跃。</p>
+<p>作者建议先从 App Hub 下载 curve editor，地址是 <a href="http://create.msdn.com/en-US/education/catalog/utility/curve_editor">http://create.msdn.com/en-US/education/catalog/utility/curve_editor</a> 。下载后，把内容解压到存放 Visual Studio 文件的同一类目录中。曲线编辑器是一个独立程序，需要从 Visual Studio 构建并运行。打开 /CurveEditor/CurveEditor.sln，然后 build。</p>
+<p>编辑器出现后，开发者可以通过添加 “keys”，也就是改变曲线方向的关键点，来画出需要的跳跃曲线。作者没有展开讲编辑器每个细节，因为 /CurveEditor/CurveEditor.htm 中已有优秀文档。文章特别提醒，曲线的第一个和最后一个关键点应该在 Y 轴上。如果要精确设置，可以选中对应点，在 “Value” 字段里输入 0.0。另一个提醒是，曲线的宽度不必对应跳跃持续时间，因为游戏循环会持续读取曲线上的值，直到没有更多点为止，跳跃也就在那时结束。</p>
+<p>画好曲线后，把它保存到游戏项目的 content 目录中。作者自己专门建了一个目录 Content/Curves 来放曲线。接下来进入游戏代码，把曲线作为内容加载。具体做法是在 Content explorer 中添加 Curves 目录，右键选择 Add &gt; Existing Item，把曲线 XML 加入项目。随后右键这个 XML 文件进入 Properties，把 Build Action 设置为 Compile，把 Content Importer 设置为 XML Content - XNA Framework，把 Content Processor 设置为 No Processing Required。</p>
+<p>然后在角色代码中加载曲线。如果使用 XNA 提供的 Platformer starter template，相关代码会在 Player.cs 文件里。先创建一个保存曲线的变量：private Curve jumpCurve;。再在 LoadContent() 方法中加入加载代码：jumpCurve = Level.Content.Load(&quot;Curves/JumpA&quot;);。这里 JumpA 是曲线文件名。</p>
+<p>最后一步是在处理跳跃的函数中迭代曲线，并用曲线值调整角色的跳跃高度。作者给出的思路是先取得经过时间：jumpTime = (float)gameTime.ElapsedGameTime.TotalSeconds;。然后判断跳跃时间是否已经开始，并且是否尚未超过曲线最后一个 key 的 Position。如果条件成立，就用 offset.Y = jumpCurve.Evaluate(jumpTime); 取得当前时间点对应的曲线高度。</p>
+<p>这段代码的意思是，只要跳跃已经开始且还没有到达曲线末尾，就把角色的 Y 值设为曲线在当前时间 tick 上的高度。jumpCurve.Keys[jumpCurve.Keys.Count - 1] 这一调用会取得曲线中的最后一个 key，因此可以用它判断是否已经抵达跳跃末端。通过这种方法，开发者不必在代码里不断微调正弦波或抛物线参数，而可以用可视化曲线直接塑造跳跃手感。</p>
+    </section>
+    
+    <div class="bottom-nav"><a class="button ghost" href="316-17.xhtml">上一篇</a><a class="button" href="../index.xhtml#topics">回到主题目录</a><a class="button ghost" href="318-get-the-thing-out-2.xhtml">下一篇</a></div>
+  </article>
+</main>
+</body>
+</html>

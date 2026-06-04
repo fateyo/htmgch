@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7月26日《City Tuesday》开发进展</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  
+</head>
+<body>
+<header class="site-header compact" id="top">
+  <div class="brand"><a class="mark linkmark" href="../index.xhtml">HTMAG</a><div><p class="eyebrow">本地 XHTML 站点</p><h1>文章</h1></div></div>
+  <nav class="top-nav"><a href="../index.xhtml">首页</a><a href="../overview.xhtml">网站架构</a><a href="../guide.xhtml">营销总论</a><a href="../index.xhtml#topics">主题目录</a><a href="../index.xhtml#all-articles">全部文章</a></nav>
+</header>
+<main class="layout article-layout">
+  <aside class="side-card">
+    <a class="back-link" href="../index.xhtml#all-articles">返回文章总目录</a>
+    <a class="back-link" href="../topics/other.xhtml">返回：综合与其他</a>
+    <div class="mini-meta">
+      <p>不容易归入单一主题的文章。</p>
+      <p>发布日期：2011-07-26</p>
+      <p>文章编号：311</p>
+    </div>
+    <div class="article-nav"><a class="button ghost" href="310-72.xhtml">上一篇</a><a class="button ghost" href="312-city-tuesday-progress-july-19th.xhtml">下一篇</a></div>
+  </aside>
+  <article class="article-card">
+    <p class="eyebrow">综合与其他 / 综合与其他</p>
+    <h1>7月26日《City Tuesday》开发进展</h1>
+    <p class="original-title">原文标题：City Tuesday progress July 26th</p>
+    <p class="source-link"><a href="https://howtomarketagame.com/2011/07/26/city-tuesday-progress-july-26th/">打开原文</a></p>
+    <div class="tags"><span class="tag">独立游戏营销综合</span></div>
+    <section>
+      <h2>三句话概括</h2>
+      <p>作者解释了《City Tuesday》中看似枯燥但关键的车辆调度代码。由于游戏依赖时间旅行和重复时间线，火车与所有角色都必须每次按同样时间行动。完成地铁车辆代码后，作者准备加入一个依赖垃圾车路线的新炸弹谜题。</p>
+    </section>
+    <section>
+      <h2>浓缩短文</h2>
+      <p>作者开篇说，开发者有时对正在做的内容保持神秘，并不是因为每一项工作都激动人心，而是因为游戏制作中很多事情真的很枯燥。过去两周，他一直在写代码，只为让一节地铁车厢能够穿过游戏世界。两周结束后，他没有炫目的新截图，也没有能让外行人兴奋的新视频，但他得到了更可靠的代码，可以管理游戏中所有车辆的时刻表。</p>
+<p>这项工作之所以重要，是因为《City Tuesday》的核心机制涉及时间旅行。为了让时间旅行成立，世界中的每个对象都必须被精确脚本化。火车每次游玩都要以完全相同的方式运行，角色和车辆也必须在固定时间到达固定位置。玩家反复观察同一段时间循环，才能从一致的行为里发现线索并解开谜题。如果列车某次早到、某次晚到，整个推理结构就会崩塌。</p>
+<p>作者花了大量时间确保代码既精确又灵活。所谓精确，是列车必须准确“踩点”；所谓灵活，是如果明天他决定列车不再于 4 分 32 秒到达，而是改为 3 分 15 秒到达，系统也能随之调整。这个改动不应该要求他手工重写整条路线。所有从起点到终点之间的屏幕，都必须逐步提高列车速度，让它最终按新的指定时间抵达。</p>
+<p>问题看似离散，却会在长距离移动中被放大。作者举例说，如果每个屏幕的误差只有十分之一秒，一趟跨越 10 个屏幕的行程到最后就会偏差整整 1 秒。对一个依赖时间循环的解谜游戏来说，这种误差可能足以破坏谜题。更麻烦的是，代码还要处理边界情况，例如列车需要缓慢加速，而不是简单地瞬间改变速度。要把方程写对、把特殊情况考虑完整，会把开发者拖在一个看似不起眼的问题上很久。</p>
+<p>作者也坦白，这类工作会让兼职开发者感到压力。时间不断花在底层系统上，目标发售日就像他正在编程的列车一样被推远。更 frustrating 的地方在于，他可能在这个问题上花几周，却没有任何直观成果可展示给玩家或关注者。</p>
+<p>不过，这部分终于完成了。文章写作当天早上，作者让时间代码正确运行，而且暂时没有 bug 挡路。接下来他应该可以加入一个新的炸弹谜题。之所以必须先把车辆代码做扎实，是因为这个新谜题依赖一系列垃圾车在城市中收走垃圾桶。换句话说，地铁调度代码不只是为火车服务，它也为所有按时间表运行的城市车辆奠定基础。</p>
+<p>文章最后，作者让读者继续关注更新，并提到自己一直在 www.screenshotsaturday.com 发布《City Tuesday》的视觉进展。整篇日志展示了独立游戏开发中常被忽略的一面：真正支撑玩法的，往往不是马上能放进预告片的画面，而是那些让世界能够稳定、重复、可信运转的系统。</p>
+    </section>
+    
+    <div class="bottom-nav"><a class="button ghost" href="310-72.xhtml">上一篇</a><a class="button" href="../index.xhtml#topics">回到主题目录</a><a class="button ghost" href="312-city-tuesday-progress-july-19th.xhtml">下一篇</a></div>
+  </article>
+</main>
+</body>
+</html>

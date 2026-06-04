@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drill Planet：我如何在 69 小时内开发并发布一款 App Store 游戏</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  
+</head>
+<body>
+<header class="site-header compact" id="top">
+  <div class="brand"><a class="mark linkmark" href="../index.xhtml">HTMAG</a><div><p class="eyebrow">本地 XHTML 站点</p><h1>文章</h1></div></div>
+  <nav class="top-nav"><a href="../index.xhtml">首页</a><a href="../overview.xhtml">网站架构</a><a href="../guide.xhtml">营销总论</a><a href="../index.xhtml#topics">主题目录</a><a href="../index.xhtml#all-articles">全部文章</a></nav>
+</header>
+<main class="layout article-layout">
+  <aside class="side-card">
+    <a class="back-link" href="../index.xhtml#all-articles">返回文章总目录</a>
+    <a class="back-link" href="../topics/launch-window.xhtml">返回：发售节奏与窗口</a>
+    <div class="mini-meta">
+      <p>让首发时机、榜单和评价速度服务转化。</p>
+      <p>发布日期：2015-07-27</p>
+      <p>文章编号：305</p>
+    </div>
+    <div class="article-nav"><a class="button ghost" href="304-the-5-reasons-why-you-need-to-build-an-email-list-this-year.xhtml">上一篇</a><a class="button ghost" href="306-what-happens-when-you-dont-push-start.xhtml">下一篇</a></div>
+  </aside>
+  <article class="article-card">
+    <p class="eyebrow">发售、定价与收入 / 发售节奏与窗口</p>
+    <h1>Drill Planet：我如何在 69 小时内开发并发布一款 App Store 游戏</h1>
+    <p class="original-title">原文标题：Drill Planet: How I developed and released a game to the App store in 69 hours</p>
+    <p class="source-link"><a href="https://howtomarketagame.com/2015/07/27/drill-planet-how-i-developed-and-released-a-game-to-the-app-store-in-69-hours/">打开原文</a></p>
+    <div class="tags"><span class="tag">发售节奏与窗口</span> <span class="tag">邮件列表与私域</span></div>
+    <section>
+      <h2>三句话概括</h2>
+      <p>作者复盘了自己如何用 69 小时把 Drill Planet 开发并提交到 iOS App Store。项目目标是在一个月一款小游戏的节奏下，做出可发布的最小可行产品，同时积累邮件列表、广告、App Store 流程等可复用基础设施。文章也坦承圆形平台跳跃和触控手感花费过多时间，后续需要更依赖现成代码库并加强测试。</p>
+    </section>
+    <section>
+      <h2>浓缩短文</h2>
+      <p>作者在 2015 年 7 月把 Drill Planet 上传到了 iOS App Store，并希望如果审核顺利，游戏能在 7 月底前上线。这篇文章记录的是一个兼职独立游戏开发者如何用很少的资金投入，把一款小型游戏做完并提交商店。作者同时提到，游戏也有 HTML5 版本，可以在 itch.io 上试玩。</p>
+<p>作者介绍自己有一份游戏行业之外的全职工作，只能兼职做独立游戏。2011 年到 2014 年间，他发布过 3 款游戏，但开发过程漫长，下载量不多，媒体关注也很少。到了 2015 年，他决定不再做耗时很长的大游戏，而是设定了“每月发布一款游戏”的目标，用 12 个小而有趣的实验来学习、试错，并让更多人知道自己的名字。</p>
+<p>Drill Planet 的目标很具体：不只是发布到网页游戏平台，而是要登上 iOS App Store；做一款受 Mario Galaxy 某个关卡启发的平台游戏；追求类似 Flappy Bird 和 Jump Car 那种“糟了，再来一次”的游玩节奏；先在 itch.io 放出早期版本收集反馈；同时搭建一些未来项目可复用的基础设施，例如邮件列表集成和通用脚本。作者没有按日记方式描述整个 5 月，而是用图表记录时间。每一个彩色条代表 1 小时，他使用类似番茄钟的计时方式，只记录真正完整高效工作的小时。</p>
+<p>标题中的 69 小时指的是有效开发时间。不过项目横跨了大约 10 周，因为作者先在 5 月最后一天完成了基础可玩版本并发布到 itch.io，之后又在 7 月回到项目上，把它整理到能够提交 App Store 的程度。为了节省开发时间，他的策略是先做一个外观不错的最小可行产品。美术方面，他购买了 Kenney 提供的预制公开素材；程序方面，他使用了 Game Maker Asset Store 上的 Advanced Planet Platformer 这类预制世界平台引擎；流程方面，他依赖自己此前使用 Game Maker 和上传 itch.io 的经验。</p>
+<p>测试是作者认为做得不够的部分。他计划未来每周五都提交一个 itch.io 构建版本，并发布到 Reddit 的 Feedback Friday 版块收集反馈，也希望继续通过朋友试玩和每月 IGDA 聚会进行现场测试。对这种小项目来说，快速发布并不等于不需要测试，尤其是平台游戏的操作手感和关卡节奏，很容易因为开发者过于熟悉而看不出问题。</p>
+<p>这次开发中，作者最满意的是积累了大量可复用基础代码。Drill Planet 集成了广告平台 AdColony，使用了状态机这种能提高编码效率的架构，加入了内置邮件列表提醒页面，因为收集邮件列表是作者的重要目标。他还把 App Store 工作流文档化并简化，包括制作预告片、准备 provisioning profiles、上传到正确渠道等步骤。游戏甚至有一个带鹰叫音效的启动画面。这些功能虽然不一定直接决定 Drill Planet 的玩法质量，但会让下一款游戏开发更快。</p>
+<p>不过作者也认为，Drill Planet 仍然花了太久。如果要维持每月一款游戏的节奏，他必须砍掉一些东西。未来他希望依赖更大的代码基础，把触控、关卡推进等重复任务交给现成引擎处理，并提到正在研究 Game Maker Asset Store 上的另一个 Platformer Engine。他也需要每周投入更多编码时间，设定每日目标，提高有效产出。</p>
+<p>最明显的教训是，圆形平台跳跃对一个月项目来说过于野心勃勃。为了让角色在星球表面移动的控制感觉正确，作者不得不重新学习高中水平的三角函数，并花了 8 小时处理操作手感和控制 bug。图表中有大量橙色时间都花在触控方案上，这让他意识到，项目规模不只取决于内容多少，也取决于核心机制是否会带来大量底层问题。</p>
+<p>至于 Drill Planet 的未来，作者表示会根据初期反响决定是否继续扩展，例如加入更多怪物类型、不同星球场景、更坚硬的地表、不同地形和更大的圆形星球。整篇文章的价值不在于宣称 69 小时就能轻松做完一款商业游戏，而是展示了一个兼职开发者如何通过素材购买、引擎复用、最小可行产品和基础设施积累，把一次小型发布变成未来持续开发的训练。</p>
+    </section>
+    <section class="related-links">
+  <h2>原文提及链接</h2>
+  <ul><li><a href="http://returntoadventuremountain.itch.io/drill-planet">on itch.io</a></li>
+<li><a href="https://www.youtube.com/watch?v=p2tLdTE8mOQ">https://www.youtube.com/watch?v=p2tLdTE8mOQ</a></li>
+<li><a href="http://returntoadventuremountain.com/wp-content/uploads/2015/07/baseTemplate1.png">returntoadventuremountain.com</a></li>
+<li><a href="http://kenney.nl/assets">http://kenney.nl/assets</a></li>
+<li><a href="https://marketplace.yoyogames.com/assets/1084/advanced-planet-platformer">https://marketplace.yoyogames.com/assets/1084/advance…</a></li>
+<li><a href="http://returntoadventuremountain.com/wp-content/uploads/2015/07/Chart2.png">returntoadventuremountain.com</a></li>
+<li><a href="http://http//www.reddit.com/r/gamedev/comments/38m2z2/feedback_friday_136_breaking_builds/">Reddit’s “feedback friday”</a></li>
+<li><a href="http://returntoadventuremountain.com/wp-content/uploads/2015/07/Chart31.png">returntoadventuremountain.com</a></li>
+<li><a href="https://marketplace.yoyogames.com/assets/1707/platformer-engine">https://marketplace.yoyogames.com/assets/1707/platfor…</a></li>
+<li><a href="http://returntoadventuremountain.com/wp-content/uploads/2015/07/Chart41.png">returntoadventuremountain.com</a></li></ul>
+</section>
+    <div class="bottom-nav"><a class="button ghost" href="304-the-5-reasons-why-you-need-to-build-an-email-list-this-year.xhtml">上一篇</a><a class="button" href="../index.xhtml#topics">回到主题目录</a><a class="button ghost" href="306-what-happens-when-you-dont-push-start.xhtml">下一篇</a></div>
+  </article>
+</main>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>把东西做出来</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  
+</head>
+<body>
+<header class="site-header compact" id="top">
+  <div class="brand"><a class="mark linkmark" href="../index.xhtml">HTMAG</a><div><p class="eyebrow">本地 XHTML 站点</p><h1>文章</h1></div></div>
+  <nav class="top-nav"><a href="../index.xhtml">首页</a><a href="../overview.xhtml">网站架构</a><a href="../guide.xhtml">营销总论</a><a href="../index.xhtml#topics">主题目录</a><a href="../index.xhtml#all-articles">全部文章</a></nav>
+</header>
+<main class="layout article-layout">
+  <aside class="side-card">
+    <a class="back-link" href="../index.xhtml#all-articles">返回文章总目录</a>
+    <a class="back-link" href="../topics/benchmarks.xhtml">返回：市场数据与行业基准</a>
+    <div class="mini-meta">
+      <p>用数据校准预期，而不是只看爆款。</p>
+      <p>发布日期：2011-04-19</p>
+      <p>文章编号：318</p>
+    </div>
+    <div class="article-nav"><a class="button ghost" href="317-how-to-curves-editor-for-simplified-jumping-2.xhtml">上一篇</a><span class="button disabled">下一篇</span></div>
+  </aside>
+  <article class="article-card">
+    <p class="eyebrow">立项与市场判断 / 市场数据与行业基准</p>
+    <h1>把东西做出来</h1>
+    <p class="original-title">原文标题：Get the thing out</p>
+    <p class="source-link"><a href="https://howtomarketagame.com/2011/04/19/get-the-thing-out-2/">打开原文</a></p>
+    <div class="tags"><span class="tag">数据基准与行业观察</span></div>
+    <section>
+      <h2>三句话概括</h2>
+      <p>作者写到游戏开发中持续存在的焦虑：创意是否足够好、是否有人抢先做出类似作品、市场或平台是否会变化。他看到 App Hub 论坛截图和一部 Jake Gyllenhaal 电影预告都与自己的游戏概念相似，因此更急于发布。文章最后说明，他放弃了用 XML 做数据驱动的“正确方式”，转而用硬编码 NPC 日程的务实方式推进项目。</p>
+    </section>
+    <section>
+      <h2>浓缩短文</h2>
+      <p>开发游戏时，作者感到一种持续的低层焦虑，像牙痛或嵌甲一样一直存在。这个概念真的像自己想象中那么聪明吗？外面是否有人正在做同样的点子，而且做得更好？市场会不会突然转向，自己准备发布的平台或游戏类型会不会变得过时？这种偏执会推动开发者赶紧发布游戏，同时也会让人觉得自己快疯了。每一个没有工作在游戏上的时刻，都像是在给那些坏事发生的机会。</p>
+<p>这一周，作者在 App Hub 论坛的 “rate my screenshot” 主题里看到有人贴出一张截图，看起来几乎和他正在开发的概念一样。那也是一种对标准标识图形的重新挪用。作者的第一反应是震惊：那个人抢先了。他立刻查看对方资料，又去 Google 搜索那个游戏工作室。作为 XBLIG 游戏开发者，他调侃说那所谓的工作室大概也不过是对方妈妈家的地下室。</p>
+<p>查完之后，作者稍微安心了一点。那个人没有发布过任何游戏，资料里有 3 个“开发中”的游戏，没有预告片，展示出来的也只是截图。作者认为自己大概还是安全的。虽然对方看起来甚至比他已有更多可展示的东西，但他安慰自己说，对方的游戏并不是对 21 世纪这种数据驱动、全知、偏执的存在主义状态的聪明再诠释。</p>
+<p>不过，这件事仍然强化了他的紧迫感。他真的需要赶紧把游戏做出来，在别人也做出类似东西之前发布。</p>
+<p>随后，他又看了电影《True Grit》。映前预告里有一部新的 Jake Gyllenhaal 电影，讲一个男人必须反复经历同样的 8 分钟，直到阻止一场灾难。作者立刻想到：这就是我的游戏。区别只是他的游戏让玩家重活 10 分钟，而且媒介不同。可他担心，如果那部电影很糟糕，而他确信它会很糟，那么观众对电影的负面印象可能会外溢到他的游戏上。他已经能想象论坛里有人用嘲讽标题发帖：“LOLz 这个游戏就像那个烂 Gyllenhaal 片子。”他希望能在电影上映前发布游戏，以证明自己的好点子是一次平行演化，而不是跟风。</p>
+<p>更糟糕的是，他觉得自己的开发进度似乎在倒退。整个周末，他都在尝试把代码库改成用 XML 驱动的数据模型。这听起来是更正确、更优雅的做法。但对于必须导出到 XBOX 的 XNA 游戏来说，XML 的实际体验像是用胶带勉强粘起来的。每次移动项目，他都会遇到各种零散错误，比如命名空间出问题、方法无法确定之类。</p>
+<p>最后，作者决定放弃“正确方式”，转向最实用的方式。游戏里庞大的 NPC 日程不再先做成 XML 数据驱动系统，而会直接写成硬编码的实例数据。也许以后他还能重新尝试 XML，把系统改回更正确的结构。但现在最重要的是先做出东西。因为他担心任何一个意外的“黑天鹅”事件都会突然出现，把他那些自认为精彩的概念抢走。</p>
+    </section>
+    
+    <div class="bottom-nav"><a class="button ghost" href="317-how-to-curves-editor-for-simplified-jumping-2.xhtml">上一篇</a><a class="button" href="../index.xhtml#topics">回到主题目录</a><span class="button disabled">下一篇</span></div>
+  </article>
+</main>
+</body>
+</html>
