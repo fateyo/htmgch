@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>拆解一款自动化建造游戏表现平淡的首发</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  
+</head>
+<body>
+<header class="site-header compact" id="top">
+  <div class="brand"><a class="mark linkmark" href="../index.xhtml">HTMAG</a><div><p class="eyebrow">本地 XHTML 站点</p><h1>文章</h1></div></div>
+  <nav class="top-nav"><a href="../index.xhtml">首页</a><a href="../overview.xhtml">网站架构</a><a href="../guide.xhtml">营销总论</a><a href="../index.xhtml#topics">主题目录</a><a href="../index.xhtml#all-articles">全部文章</a></nav>
+</header>
+<main class="layout article-layout">
+  <aside class="side-card">
+    <a class="back-link" href="../index.xhtml#all-articles">返回文章总目录</a>
+    <a class="back-link" href="../topics/launch-window.xhtml">返回：发售节奏与窗口</a>
+    <div class="mini-meta">
+      <p>让首发时机、榜单和评价速度服务转化。</p>
+      <p>发布日期：2023-10-31</p>
+      <p>文章编号：97</p>
+    </div>
+    <div class="article-nav"><a class="button ghost" href="096-my-advice-to-aaa-developers-trying-to-make-indie-games.xhtml">上一篇</a><a class="button ghost" href="098-the-other-game-that-succeeded-during-the-starfield-launch.xhtml">下一篇</a></div>
+  </aside>
+  <article class="article-card">
+    <p class="eyebrow">发售、定价与收入 / 发售节奏与窗口</p>
+    <h1>拆解一款自动化建造游戏表现平淡的首发</h1>
+    <p class="original-title">原文标题：Deconstructing the underwhelming launch of a automation builder game</p>
+    <p class="source-link"><a href="https://howtomarketagame.com/2023/10/31/deconstructing-the-underwhelming-launch-of-a-automation-builder-game/">打开原文</a></p>
+    <div class="tags"><span class="tag">发售节奏与窗口</span> <span class="tag">定价、折扣与收入</span> <span class="tag">Steam 平台与商店机制</span> <span class="tag">Demo 策略</span> <span class="tag">数据基准与行业观察</span></div>
+    <section>
+      <h2>三句话概括</h2>
+      <p>文章复盘自动化城市建造游戏 <a href="https://store.steampowered.com/app/2152810/Forge_Industry/">Forge Industry</a> 首发表现不佳的原因：它选对了 Steam 友好的类型，也有不错的胶囊图和较短开发周期，但在画面、UX、玩法验证、Steam 节奏和首发策略上犯了很多新手错误。游戏首周售出 104 份、总收入 1824 美元、首发愿望单 2500 个，未能进入 Popular Upcoming 和 New &amp; Trending。作者建议团队用一次短更新收尾，再基于已有代码和社区做同类第二款游戏。</p>
+    </section>
+    <section>
+      <h2>浓缩短文</h2>
+      <p>这篇文章少见地分析了一个没有成功爆发的 Steam 游戏案例：<a href="https://store.steampowered.com/app/2152810/Forge_Industry/">Forge Industry</a>。作者平时更多写 <a href="https://store.steampowered.com/app/1296610/Peglin/">Peglin</a>、Tape 2 Tape、<a href="https://store.steampowered.com/app/799600/Cosmoteer_Starship_Architect__Commander/">Cosmoteer</a>、BattleBit、Dwarves 这类成功故事，但这次选择 Forge Industry，是因为开发团队自己做了坦诚的复盘视频，也同意公开讨论更多数据。这个案例有研究价值，因为 Forge Industry 属于作者一直看好的 Steam 类型：自动化城市建造，也就是他常说的 crafty-buildy-game。理论上 Steam 玩家非常喜欢建造、制作、城市、工厂和自动化游戏，但这款游戏并没有起飞。</p>
+<p><a href="https://store.steampowered.com/app/2152810/Forge_Industry/">Forge Industry</a> 是一款围绕本地铁匠铺优化供应链的自动化城市建造游戏，2023 年 7 月 21 日上线。首发第一周卖出 104 份，总收入 1824 美元；上线时有 2500 个愿望单，愿望单转化率为 3.5%；当时有 15 条好评，销量与评测比例大约是 8:1。它参加过 Steam Next Fest 和 Dreamhack Beyond，但没有进入 Popular Upcoming，也没有进入 New &amp; Trending。开发周期为 18 个月，团队由 4 名大学计算机专业出身的程序员组成，他们最初是在晚上一起玩游戏时产生了“为什么不自己做游戏”的想法。</p>
+<p>作者先肯定团队做对的地方。最重要的是类型选择正确。建造、制作、城市建造和工厂游戏在 Steam 上有庞大且热情的受众，独立团队应该更多考虑这些类型，而不是继续扎堆平台跳跃、解谜、RPG 或类塞尔达动作冒险。对一个由 4 名程序员组成、美术能力有限的团队来说，城市建造也是相对合理的选择。相比线性动作冒险，城市建造不需要那么多角色动画和一次性场景资产，更依赖结构清晰的代码、系统和数值。作者的判断很直接：如果美术不是强项，就不要去做 3D 动作冒险。</p>
+<p>团队的胶囊图（capsule）也做得不错。作者认为，最严重的营销错误之一就是自己画 Steam 胶囊图，除非开发者本身就是全职专业插画师，而不仅是平面设计师。<a href="https://store.steampowered.com/app/2152810/Forge_Industry/">Forge Industry</a> 团队花 120 欧元在 Fiverr 上找了一位画师，根据他们提供的火柴人草图画出山上矮人在铁砧前锤打的主视觉，之后又花 30 欧元追加竖版延展。对一个小团队来说，这是很划算的投入，也说明他们知道 Steam 商店视觉包装不能完全靠临时拼凑。</p>
+<p>开发周期短也是优点。虽然从 2022 年 1 月到 2023 年 7 月看起来是 18 个月，但团队成员同时都有每周 40 小时的正式工作，中间还曾有一两个月没有实质推进。团队估计如果全职做，可能 9 个月能达到类似结果。作者认为这对第一款游戏尤其重要，因为首作很可能失败，越快完成、越快学习、越快进入下一款越好。很多新团队花多年打磨第一款游戏，最后失败后没有能力继续，这才是更大的风险。</p>
+<p>问题主要出在执行质量和 Steam 策略。画面是最明显短板。自动化游戏不需要成为 Steam 上最漂亮的游戏，但至少要看起来专业、统一、可信。<a href="https://store.steampowered.com/app/2152810/Forge_Industry/">Forge Industry</a> 的美术、UI 和整体视觉没有形成足够强的吸引力，可能削弱了点击和转化。作者还指出，UX、教程、上手体验和一对一试玩不足。自动化、建造、供应链游戏看似适合程序员团队，但这种类型高度依赖玩家能否快速理解目标、操作和反馈。如果玩家前几分钟不清楚该做什么，或者界面阻碍理解，愿望单和曝光都救不了销量。</p>
+<p>更严重的是，团队可能没有先找到足够强的乐趣核心。文章提到游戏的中位游玩时长低于 10 分钟，这对 Steam 算法和口碑都不利。Steam 的可见性越来越依赖玩家行为：如果试玩或购买后停留时间短，系统就更难继续把游戏推荐给更多人。作者认为，Demo 上线太晚、没有充分用试玩数据打磨乐趣，也让团队错过了提前发现问题的机会。Demo 对营销很有用，但前提是它本身足够令人兴奋，能证明玩家会继续玩并转化为购买。</p>
+<p>Steam 节奏也有很多可改进之处。<a href="https://store.steampowered.com/app/2152810/Forge_Industry/">Forge Industry</a> 首发只有 2500 个愿望单，低于作者常建议的更稳妥水平；它没有进入 Popular Upcoming 和 New &amp; Trending，意味着没能踏上 Steam 的关键可见性阶梯。团队首发时还因为沟通问题没有设置折扣。作者解释，Steam 无论是否打折都会给愿望单和关注者发送“游戏已可购买”邮件，但折扣能制造 FOMO，让犹豫玩家在限定时间内做决定。除非游戏已经非常热，比如有 10 万以上愿望单、中位游玩时长超过 30 分钟、主播主动追着玩，否则首发折扣很重要。对 Forge Industry 这种热度不足的游戏，作者认为应该用 20% 这类更有压力的折扣来推动转化。</p>
+<p>团队在 2022 年 10 月参加比利时最大游戏展 Gameforce 时，还尝试预售 Steam Key 来回收成本。他们卖了两个档位：13 欧元标准包，包含折扣 Steam Key 和 Discord 权限；20 欧元支持者版，包含 Steam Key、60x40 厘米海报、小木制酒杯钥匙扣、额外装饰建筑和 Discord 权限。现场收入 806 欧元，执行力值得肯定。但作者认为时机错误。通过 Steam 外部售出的预发布 Key，Valve 不会把激活当作真实销量，相关评测也不计入冲击 10 条评测门槛和 New &amp; Trending 所需的销售权重。最铁杆的现场玩家本应被引导到首发当天购买和评价，而不是提前消耗掉。作者建议展会卖旧作 Key 没问题，但不要预售未发售游戏的 Key。</p>
+<p>首发时保留 Demo 也可能削弱了购买集中度。作者总体支持 Demo，但如果游戏本身热度不足、试玩中位时长偏低，就应该在首发前后几周暂时下架 Demo，把尽可能多的兴趣集中到购买上。团队观察到发 Demo 时愿望单上升、撤 Demo 时下降，作者认为这说明 Demo 在发售前有价值，但发售后新增愿望单可能只是“等打折”的信号，不一定能帮首发收入。</p>
+<p>团队还投入了很多 YouTube 内容。作者承认 YouTube 有成功案例，例如 <a href="https://www.youtube.com/c/jonastyroller">Jonas Tyroller</a> 的内容帮助 <a href="https://store.steampowered.com/app/2239150/Thronefall/">Thronefall</a>，<a href="https://www.youtube.com/watch?v=zpqrCaSw3DM">Dani</a> 的视频让 <a href="https://store.steampowered.com/app/1228610/KARLSON/">KARLSON</a> 成为 Steam 高愿望单游戏之一。但 YouTube 非常耗时，开发者必须几乎成为“做游戏的 YouTuber”，而不是偶尔上传视频的游戏开发者。<a href="https://store.steampowered.com/app/2152810/Forge_Industry/">Forge Industry</a> 团队自己也意识到，他们吸引的核心观众是游戏开发者，而不是自动化建造游戏玩家；他们的视频更像教育内容，而不是面向普通玩家的娱乐内容，devlog 反而经常是每月表现最差的视频。</p>
+<p>作者给团队的建议很实际：快速为 <a href="https://store.steampowered.com/app/2152810/Forge_Industry/">Forge Industry</a> 做一次内容更新，集中修复最容易处理的玩家抱怨，但不要超过 2 个月；之后诚实地结束开发，向社区解释收入太低、继续维护不可持续，同时表现出尊重玩家的态度。下一款游戏应该基于现有代码，继续做自动化或相邻类型，比如城市建造、殖民地模拟、模拟器、Tycoon 管理。团队需要把大量精力放在一对一试玩、教程、UX 和易用性上，并请自由美术或艺术指导改善视觉统一性和 UI。第二款游戏应尽早上线 Steam 页面，早放 Demo，持续联系主播，目标至少 7000 个愿望单。至于 YouTube，可以在第二款页面上线后尝试 5 个更面向普通玩家的视频，如果看不到观看转化为愿望单的证据，就应该停止，把精力放回游戏设计。Forge Industry 选对了方向，但首作暴露的是新团队几乎必经的基础课。</p>
+    </section>
+    <section class="related-links">
+  <h2>原文提及链接</h2>
+  <ul><li><a href="https://store.steampowered.com/app/2152810/Forge_Industry/">Forge Industry</a></li>
+<li><a href="https://www.fiverr.com/blablacraca/paint-fantasy-landscapes-fine-art-backgrounds?source=order_page_summary_gig_link_title&amp;funnel=3a8c38b885caeb0fe1b30bead33c8a94">fiverr Artist</a></li>
+<li><a href="https://partner.steamgames.com/doc/store/pricing">See this latest minimum pricing rule change from Stea…</a></li>
+<li><a href="https://newsletter.gamediscover.co/p/how-does-steams-new-and-trending">Get enough sales to trigger New and trending (Blog fr…</a></li>
+<li><a href="https://www.youtube.com/c/jonastyroller">Jonas Tyroller</a></li>
+<li><a href="https://store.steampowered.com/app/2239150/Thronefall/">Thronefall</a></li>
+<li><a href="https://www.youtube.com/watch?v=zpqrCaSw3DM">Dani</a></li>
+<li><a href="https://store.steampowered.com/app/1228610/KARLSON/">KARLSON</a></li></ul>
+</section>
+    <div class="bottom-nav"><a class="button ghost" href="096-my-advice-to-aaa-developers-trying-to-make-indie-games.xhtml">上一篇</a><a class="button" href="../index.xhtml#topics">回到主题目录</a><a class="button ghost" href="098-the-other-game-that-succeeded-during-the-starfield-launch.xhtml">下一篇</a></div>
+  </article>
+</main>
+</body>
+</html>
