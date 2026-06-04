@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>实现这些功能以避免差评</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  
+</head>
+<body>
+<header class="site-header compact" id="top">
+  <div class="brand"><a class="mark linkmark" href="../index.xhtml">HTMAG</a><div><p class="eyebrow">本地 XHTML 站点</p><h1>文章</h1></div></div>
+  <nav class="top-nav"><a href="../index.xhtml">首页</a><a href="../overview.xhtml">网站架构</a><a href="../guide.xhtml">营销总论</a><a href="../index.xhtml#topics">主题目录</a><a href="../index.xhtml#all-articles">全部文章</a></nav>
+</header>
+<main class="layout article-layout">
+  <aside class="side-card">
+    <a class="back-link" href="../index.xhtml#all-articles">返回文章总目录</a>
+    <a class="back-link" href="../topics/steam-platform.xhtml">返回：Steam 平台机制</a>
+    <div class="mini-meta">
+      <p>理解 Steam 如何用标签、点击、愿望单和评价分发流量。</p>
+      <p>发布日期：2021-09-28</p>
+      <p>文章编号：198</p>
+    </div>
+    <div class="article-nav"><a class="button ghost" href="197-steam-next-fest.xhtml">上一篇</a><a class="button ghost" href="199-marketing-meatball-theory-how-to-use-free-to-get-more-followers.xhtml">下一篇</a></div>
+  </aside>
+  <article class="article-card">
+    <p class="eyebrow">Steam 页面与平台曝光 / Steam 平台机制</p>
+    <h1>实现这些功能以避免差评</h1>
+    <p class="original-title">原文标题：Implement these features to avoid bad reviews</p>
+    <p class="source-link"><a href="https://howtomarketagame.com/2021/09/28/implement-these-features-to-avoid-bad-reviews/">打开原文</a></p>
+    <div class="tags"><span class="tag">Steam 平台与商店机制</span> <span class="tag">商店页包装</span></div>
+    <section>
+      <h2>三句话概括</h2>
+      <p>文章列出 Steam 玩家认为理所当然、缺失后容易引发差评的一批基础功能。重点包括完整可重绑定按键、手柄/键盘/鼠标无缝操作、超宽屏、60 FPS、窗口模式、色盲支持、独立音量、暂停、云存档、成就、Steam 覆盖层和控制器断连暂停等。作者强调早期评测非常关键，少量差评就可能把游戏拉到“褒贬不一”。</p>
+    </section>
+    <section>
+      <h2>浓缩短文</h2>
+      <p>Steam 玩家比许多独立开发者想象得更熟悉平台，也更挑剔、更愿意表达意见。很多开发者会惊讶于自己的游戏因为一些看似细枝末节的功能缺失而收到差评，但作者认为这些并不是小事，而是 Steam 用户已经默认期待的基础配置。尤其在游戏刚上线时，早期评测非常重要，少数负评就可能让评价等级变成“Mixed”（褒贬不一）甚至更差，所以开发阶段就应该把这些功能当作基本要求。</p>
+<p>控制方面，最重要的是完整可重绑定按键。玩家期望可以把每一个动作绑定到手柄、鼠标和键盘上的任意按钮，注意是每一个动作、每一个按钮。原因包括 PC 设备类型多、玩家操作习惯差异大，以及无障碍需求。有些玩家会使用脚踏板等特殊控制器来移动游戏角色，如果游戏不允许完整自定义，就会直接排除这部分玩家。作者认为这是许多首次开发者最容易漏掉的基础功能。</p>
+<p>方向键和摇杆也需要足够灵活。玩家通常期望十字键（Dpad）和模拟摇杆可以在游戏中互换使用，除非他们主动重新绑定方向键。他们还可能希望把某些动作分配给 Dpad，同时用模拟摇杆控制角色移动。开发者可能觉得这很夸张，但 Steam 玩家确实会这样期待。除此之外，游戏 UI 应该能在任何时候用鼠标、键盘和手柄无缝交替操作，不需要进入设置切换输入模式。这部分也是获得 Steam“完整控制器支持”标识的要求之一。从用户角度看也合理，PC 玩家常坐在桌前，三种输入设备都在手边，可能用手柄控制角色，又立刻用鼠标点菜单，用键盘输入聊天文字。</p>
+<p>图形方面，超宽屏支持越来越重要。许多玩家已经使用超宽显示器，作者自己也使用并喜欢这种设备。问题是，不少游戏在 2560 x 1440 或更高、比例特殊的分辨率下会出现 UI 元素和按钮被挤出屏幕，或者加了黑边后背景元素意外显示到黑边区域上，看起来非常廉价。开发者应该支持超宽分辨率，并实际测试游戏在这些显示设置下是否正常。</p>
+<p>60 FPS 也是基本期待。即使是节奏缓慢的像素风游戏，也应该至少达到每秒 60 帧，否则很容易收到负面评论。作者承认开发者可以争论玩家是否真的“需要”这么高的帧率，但在 Steam 用户语境中，不支持 60 FPS 就会被抱怨。窗口模式同样必要。即使你的游戏想提供史诗感和沉浸感，也有人希望降低刺激强度，让游戏在桌面背景中以窗口运行。窗口模式还能在游戏无法正确适配超宽屏时临时解决缩放问题。</p>
+<p>色盲模式不是迎合挑剔玩家，而是无障碍功能。如果游戏玩法依赖区分颜色，就必须提供其他识别方式，不能只靠红绿、蓝紫等色彩差异。音频方面，音乐和音效应该有独立可调音量，并且都可以静音。即使开发者认为自己的混音完美，也会有玩家想自己调整；还有玩家喜欢播放自己的音乐，但仍希望保留游戏音效。</p>
+<p>Steam 相关功能中，随时暂停看似简单，实际在一些引擎里实现起来并不轻松，但玩家期望任何时刻都能暂停，包括过场动画中，而且不受惩罚。云存档则通过 Steam API 上传存档，让玩家在一台 PC 上游玩后，可以到另一台 PC 从同一进度继续。作者承认这听上去像小需求，毕竟不是每个人都有多台游戏 PC，但他收到过足够多相关请求，认为值得实现。没有云存档通常不一定导致差评，但会引发抱怨。</p>
+<p>成就是 Steam 玩家非常喜欢的系统。很多玩家会加入专门社区，记录自己收集过的成就，所以开发者应该添加成就。不过作者特别提醒，成就猎人讨厌“无死亡通关”这类成就，也就是只能在全程不死的情况下获得，最好不要设计。交易卡是达到一定销售水平后才解锁的特殊功能，如果游戏有幸达到门槛，就应该制作。Steam 覆盖层打开时，游戏应该自动暂停；控制器拔掉、关闭、断连或没电时，游戏也应该暂停，这些都需要检查 Steam API 或输入系统的支持。</p>
+<p>文章最后提到一个加分功能：可上传截图。Steam API 支持玩家按键把游戏截图上传到个人资料。许多 Steam 用户参与截图分享社区，把游戏截图像旅行照片一样展示。没有这个功能一般不会伤害评价，但如果实现，会受到部分 Steam 社群欢迎。整体来看，这些功能不是营销噱头，而是避免早期差评、满足 PC 玩家预期的基础工程工作。</p>
+    </section>
+    <section class="related-links">
+  <h2>原文提及链接</h2>
+  <ul><li><a href="https://www.youtube.com/watch?v=KbFs9ghIIEI">For more tips on accessibility, watch this talk on co…</a></li>
+<li><a href="https://partner.steamgames.com/doc/features/overlay">Check the Steam API for this one.</a></li>
+<li><a href="https://partner.steamgames.com/doc/features/screenshots">Read more here</a></li>
+<li><a href="https://unsplash.com/@pablozuchero?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pablo Zuchero</a></li>
+<li><a href="https://unsplash.com/s/photos/thumbs-up?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></li></ul>
+</section>
+    <div class="bottom-nav"><a class="button ghost" href="197-steam-next-fest.xhtml">上一篇</a><a class="button" href="../index.xhtml#topics">回到主题目录</a><a class="button ghost" href="199-marketing-meatball-theory-how-to-use-free-to-get-more-followers.xhtml">下一篇</a></div>
+  </article>
+</main>
+</body>
+</html>

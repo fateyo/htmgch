@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>如何在 Steam 直播你的游戏并登上首页</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  
+</head>
+<body>
+<header class="site-header compact" id="top">
+  <div class="brand"><a class="mark linkmark" href="../index.xhtml">HTMAG</a><div><p class="eyebrow">本地 XHTML 站点</p><h1>文章</h1></div></div>
+  <nav class="top-nav"><a href="../index.xhtml">首页</a><a href="../overview.xhtml">网站架构</a><a href="../guide.xhtml">营销总论</a><a href="../index.xhtml#topics">主题目录</a><a href="../index.xhtml#all-articles">全部文章</a></nav>
+</header>
+<main class="layout article-layout">
+  <aside class="side-card">
+    <a class="back-link" href="../index.xhtml#all-articles">返回文章总目录</a>
+    <a class="back-link" href="../topics/steam-platform.xhtml">返回：Steam 平台机制</a>
+    <div class="mini-meta">
+      <p>理解 Steam 如何用标签、点击、愿望单和评价分发流量。</p>
+      <p>发布日期：2020-10-05</p>
+      <p>文章编号：245</p>
+    </div>
+    <div class="article-nav"><a class="button ghost" href="244-how-much-and-when-should-you-discount-your-game-on-steam.xhtml">上一篇</a><a class="button ghost" href="246-i-come-in-peace-why-indies-are-not-competing-against-each-other.xhtml">下一篇</a></div>
+  </aside>
+  <article class="article-card">
+    <p class="eyebrow">Steam 页面与平台曝光 / Steam 平台机制</p>
+    <h1>如何在 Steam 直播你的游戏并登上首页</h1>
+    <p class="original-title">原文标题：How to Broadcast your game on Steam and get on the front page</p>
+    <p class="source-link"><a href="https://howtomarketagame.com/2020/10/05/how-to-broadcast-your-game-on-steam/">打开原文</a></p>
+    <div class="tags"><span class="tag">Steam 平台与商店机制</span> <span class="tag">愿望单增长与质量</span> <span class="tag">Steam Next Fest 与节日活动</span> <span class="tag">商店页包装</span> <span class="tag">数据基准与行业观察</span></div>
+    <section>
+      <h2>三句话概括</h2>
+      <p>文章是一份 Steam 直播操作指南，说明如何用 OBS、Steam 广播设置和 Steamworks 活动把游戏直播放到商店页。作者引用 Steam Summer Festival 数据称，参与直播的游戏平均获得 3875 个愿望单，未直播游戏平均为 1972 个。文章还解释了如何通过 24 小时循环视频、促销活动和明确行动号召提高进入 Steam 首页直播位的机会。</p>
+    </section>
+    <section>
+      <h2>浓缩短文</h2>
+      <p>Steam 允许开发者把游戏视频直播到自己的商店页。作者在 2020 年 6 月收集 Steam Summer Festival 数据时发现，参与直播的游戏平均获得 3875 个愿望单，没有直播的游戏平均获得 1972 个愿望单，前者大约高出 50%。这不是严格因果结论，因为更高质量的游戏通常团队更大，也更有资源搭直播，但作者认为 Steam 广播的配置难度并不高，值得开发者尝试。</p>
+<p>搭建直播之前，最重要的是提前准备。Steam 广播涉及游戏、Steam、OBS 三套东西协同，临近活动才配置很容易出问题。作者建议准备一段至少 15 到 20 分钟的高质量预录 gameplay 视频，用于测试，也可以在活动期间循环播放。OBS 里最好预先设置几个场景：全屏游戏素材、全屏开发者镜头、开发者带头像角标游玩游戏。直播电脑应使用网线连接路由器，避免 Wi-Fi 中断，因为断流后重新配置很麻烦。配置过程中还会复制大量服务器地址、App ID、RTMP token 等长字符串，最好先准备一个文本文件集中保存。</p>
+<p>实际配置流程包括加入 Steam 的 storebroadcastbeta 群组，找到游戏 Steam 商店 URL 中 /app/ 后面的游戏 ID，到 steamcommunity.com/broadcast/upload 设置上传服务器、上传 token、Broadcast App ID、观看权限、聊天权限和延迟。测试阶段观看权限可设为 Friends Only，正式开播再切到 Public。Steamworks 里还要进入游戏的 Edit Store Page，在 Special Settings 中把自己加入 Broadcaster，并发布改动。Steam 客户端本身也要在 Settings 的 Broadcasting 里设置 Anyone can watch my games，最大码率设为 2500 kbit/s。</p>
+<p>OBS 端则选择 Custom 服务，把 Steam 提供的上传服务器填入 Server，把上传 token 填入 Stream Key。输出设置中，Output Mode 选择 Advanced，Streaming 页把 Bitrate 设为 2500，Keyframe Interval 设为 2。测试时在 OBS 的 Sources 添加 Media Source，选择预录视频并勾选 loop，然后点击 Start Streaming。之后回到 Steam 广播上传页面，点击 Your Broadcast URL 检查是否连通。如果一切正常，再把观看权限改为 Public。</p>
+<p>作者特别指出，Steam 文档说广播此时应该出现在主商店页，但他自己的经验是还需要创建一个活动。做法是在 Steamworks 的 Post/Manage Events &amp; Announcements 中创建新活动，上传活动头图，填写描述，在 Options 里把结束时间设到很久之后，通常设为整个节庆活动结束时，避免直播突然中断。在 Broadcasting 页打开“Allow Steam Broadcasts to appear on event and store page”，并把自己的 Steam ID 加进 BROADCASTER WHITELIST。预览活动时如果能看到视频，就可以发布。Steam 有时需要最多 10 分钟才会开始显示。</p>
+<p>直播的营销价值不只在商店页。Steam 首页在 “New and Trending” 下方会展示 6 个热门直播，如果进入前 6，就等于出现在 Steam 首页。第 6 名直播通常约有 643 个观众。这个数字看起来高，但如果游戏参加 Steam Game Festival: Autumn Edition 或 Made With GameMaker Sale 这样的促销活动，商店页天然会有大量访问，而访问商店页的人也会计入观看。作者的游戏《<a href="https://store.steampowered.com/app/1152020/Return_Of_The_Zombie_King/">Return of the Zombie King</a>》很小众、画面也不突出，但在 Made With GameMaker Sale 期间靠 24/7 循环直播登上了 Steam 首页。</p>
+<p>作者建议在节庆活动一开始，通常是太平洋时间上午 10 点，就启动直播，并让预录视频尽可能长时间循环。Valve 的 FAQ 明确允许预录内容，尤其适合展示办公室、开发团队或为游戏提供背景叙事，但建议标注 “Pre Recorded”。当开发者准备真人直播时，可以在 OBS 中添加游戏源和摄像头源，关闭循环视频，切换到实时游玩。</p>
+<p>直播还需要明确互动设计。开发者可以制作 Broadcast Artwork，放在直播左右两侧，显示社交账号、直播日程、游戏信息，并提醒玩家加入愿望单。准备正式开播前，可以用显眼文字覆盖层预告时间，例如作者在 Steam 首页直播时提前 30 分钟写上“SATURDAY 5PM PST LIVE KEY GIVEAWAY BE HERE IN CHAT”，结果吸引了很多玩家进聊天室询问 key。直播中可以发放已发售游戏的 Steam key，问答、拉朋友、聊天都可以作为参与条件。更重要的是，始终要有行动号召。作者每 15 到 20 分钟会停止游玩，切到浏览器，逐步展示如何找到游戏并点击愿望单按钮，同时在聊天里引导玩家加入 Discord 或邮件列表。直播的目的不是单纯有人看，而是把流量转化成愿望单和长期关注者。</p>
+    </section>
+    <section class="related-links">
+  <h2>原文提及链接</h2>
+  <ul><li><a href="https://steamcommunity.com/groups/storebroadcastbeta">https://steamcommunity.com/groups/storebroadcastbeta</a></li>
+<li><a href="https://steamcommunity.com/broadcast/upload">https://steamcommunity.com/broadcast/upload</a></li>
+<li><a href="https://partner.steamgames.com/doc/store/broadcast/setting_up">https://partner.steamgames.com/doc/store/broadcast/se…</a></li>
+<li><a href="https://obsproject.com/download">https://obsproject.com/download</a></li>
+<li><a href="https://discord.gg/upzreVf">HowToMarketAGame Discord: Ask here</a></li>
+<li><a href="https://partner.steamgames.com/doc/marketing/steamgamefestival/2020autumn">Like the Steam Game Festival: Autumn Edition</a></li>
+<li><a href="https://store.steampowered.com/app/1152020/Return_Of_The_Zombie_King/">Return of the Zombie King</a></li>
+<li><a href="https://partner.steamgames.com/doc/store/broadcast/faq">https://partner.steamgames.com/doc/store/broadcast/faq</a></li>
+<li><a href="https://store.steampowered.com/app/328080/Rise_to_Ruins/">Rise To Ruins</a></li></ul>
+</section>
+    <div class="bottom-nav"><a class="button ghost" href="244-how-much-and-when-should-you-discount-your-game-on-steam.xhtml">上一篇</a><a class="button" href="../index.xhtml#topics">回到主题目录</a><a class="button ghost" href="246-i-come-in-peace-why-indies-are-not-competing-against-each-other.xhtml">下一篇</a></div>
+  </article>
+</main>
+</body>
+</html>

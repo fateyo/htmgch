@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-CN" lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>介绍 Game Data Crunch</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+  
+</head>
+<body>
+<header class="site-header compact" id="top">
+  <div class="brand"><a class="mark linkmark" href="../index.xhtml">HTMAG</a><div><p class="eyebrow">本地 XHTML 站点</p><h1>文章</h1></div></div>
+  <nav class="top-nav"><a href="../index.xhtml">首页</a><a href="../overview.xhtml">网站架构</a><a href="../guide.xhtml">营销总论</a><a href="../index.xhtml#topics">主题目录</a><a href="../index.xhtml#all-articles">全部文章</a></nav>
+</header>
+<main class="layout article-layout">
+  <aside class="side-card">
+    <a class="back-link" href="../index.xhtml#all-articles">返回文章总目录</a>
+    <a class="back-link" href="../topics/benchmarks.xhtml">返回：市场数据与行业基准</a>
+    <div class="mini-meta">
+      <p>用数据校准预期，而不是只看爆款。</p>
+      <p>发布日期：2020-09-08</p>
+      <p>文章编号：249</p>
+    </div>
+    <div class="article-nav"><a class="button ghost" href="248-among-us-the-4-lessons-of-their-viral-success.xhtml">上一篇</a><a class="button ghost" href="250-example-of-a-great-email-signup-form-huge-wishlist-counts-and-why-do-early-acces.xhtml">下一篇</a></div>
+  </aside>
+  <article class="article-card">
+    <p class="eyebrow">立项与市场判断 / 市场数据与行业基准</p>
+    <h1>介绍 Game Data Crunch</h1>
+    <p class="original-title">原文标题：Introducing Game Data Crunch</p>
+    <p class="source-link"><a href="https://howtomarketagame.com/2020/09/08/1036/">打开原文</a></p>
+    <div class="tags"><span class="tag">数据基准与行业观察</span> <span class="tag">品类、标签与市场定位</span> <span class="tag">定价、折扣与收入</span> <span class="tag">Steam 平台与商店机制</span></div>
+    <section>
+      <h2>三句话概括</h2>
+      <p>Lars Doucet 介绍了自己的数据分析网站 Game Data Crunch，并说明游戏开发者应如何用数据辅助折扣、品类判断和市场决策。文章强调不要迷信绝对销量估算，而要结合评论数、关注者、峰值在线、畅销榜等相对排名理解一款游戏的位置。作者用 <a href="https://store.steampowered.com/app/751780/Forager/">Forager</a>、Doom、<a href="https://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/">Doki Doki Literature Club</a>、<a href="https://store.steampowered.com/app/264710/Subnautica/">Subnautica</a>、Lair of the Clockwork God、<a href="https://store.steampowered.com/app/113200/The_Binding_of_Isaac/">Binding of Isaac</a> 等案例说明，数据必须服务于具体问题，并诚实讲出有用的故事。</p>
+    </section>
+    <section>
+      <h2>浓缩短文</h2>
+      <p>Lars Doucet 在这篇客座文章中介绍了他开发的新数据分析网站 Game Data Crunch，并借此讨论独立游戏开发者如何把数据用在真实的商业和营销决策上。他一开始提醒，很多业余数据分析者会以为只要盯着一大堆数据，就会自动发现惊人洞察，但这种做法很容易导致两种问题：要么对无意义的模式反应过度，要么浪费大量时间。更好的方式是先提出一个具体问题，再去思考哪些数据能回答它、数据在哪里、是否可获得、是否可靠。</p>
+<p>文章的第一个案例是折扣决策。假设开发者准备给游戏打折，常见建议是如果从未打折过，就从较小折扣开始，每次促销逐步提高。但如果要在 10% 和 15% 之间选择，泛泛的经验就不够了。作者推荐查看 IsThereAnyDeal.com 的 beta 站点 <a href="http://new.isthereanydeal.com/">new.isthereanydeal.com</a>，在某款游戏页面点击“Stats”，就能看到用户设置的价格等待阈值。以热门制作游戏 <a href="https://store.steampowered.com/app/751780/Forager/">Forager</a> 为例，很多用户会在网站上为某款游戏设置个人价格提醒，等游戏达到或超过自己想要的折扣时收到邮件。IsThereAnyDeal 会把这些等待名单和阈值聚合成图表。Forager 的图表在 50% 折扣处有一个明显峰值：861 名用户会在游戏达到五折时收到通知。这个数据只来自 IsThereAnyDeal 的私有等待名单系统，样本偏向热衷折扣追踪的玩家，并不完全代表 Steam 全体用户，但仍然比没有信号要好。如果作者是 Forager 的开发者，并且正在考虑下一次促销是 50% 还是 60%，他会选 50%。因为下一个巨大峰值在 75%，而很多等折扣的人很可能就在 25%、50%、75% 这些心理节点附近等待。促销如果已经接近这些标记，就应尽量直接打到节点，避免折扣给多了损失收入，或折扣差一点导致错过大量排队购买的玩家。</p>
+<p>接着，作者讨论了为什么相对排名往往比绝对销量更有价值。SteamDB 会汇总不同来源的销量估算，例如基于评论数的 Boxleiter 方法，也就是把商店页评论数乘以 20 到 60 之间的常数；<a href="https://playtracker.net/">Playtracker.net</a> 会抓取公开 Steam 个人资料估算拥有者数量；SteamSpy 在 Valve 修改用户资料默认隐私设置后也可能采用类似方法。文章用 Fall Guys 举例：发行商曾在 8 月 26 日宣布 Steam 版达到 700 万拥有者，而不同估算方法在 8 月 27 日和之后给出的数字并不一致。作者认为，业内经常争论谁的销量估算更准确，但与其追逐未知且不精确的销量数字，不如直接测量 Steam 上每款游戏都有的已知事实，并把它们互相排序。</p>
+<p>以 Doom 2016 为例，作者不知道它究竟卖了多少份，读者也不知道。但他知道它有多少评论，也能知道所有 Steam 游戏的评论数；他能通过 Steam 游戏中心人数统计有多少人点过“关注这款游戏”；他能通过 <a href="http://steamcharts.com/">SteamCharts.com</a> 查看最高同时在线人数；也能看它过去 24 小时在畅销榜的位置。每个指标都有偏差：畅销榜有用但时间窗口很短；评论数会低估早期没有评论系统时发售的老游戏，也可能因为 Steam 近一年鼓励玩家写评论而高估新游戏表现；峰值在线偏向多人游戏；关注者数量偏向在 Steam 站内社区活跃的游戏，可能低估社区沉默或主要在 Steam 外组织的热门作品。但这些指标放在一起，并以相对排名展示，就能描绘出一幅更可信的图景。作者认为，无论 Doom 2016 实际销量是多少，它大概率位于 Steam 前 250 名游戏之内。</p>
+<p>Game Data Crunch 的另一个重点是语境。Doom 2016 发售很久，经历过多次折扣，最高折扣达到 70%，所以它的大量销量很可能来自较深折扣。网站上的“Average Price”指的是游戏存在期间任意一天价格的平均值，不是未知的实际平均成交价，后者几乎肯定更低。如果游戏参加过很多捆绑包，也会推高部分表现指标。作者还会在语境面板中补充捆绑包数据。随后，他按标签查看 Doom 在具体类型中的排名：Action 是 Steam 目录里极大的分类，几乎覆盖半个库，Doom 能排到第 44 很不容易；Horror 是小一些但仍相当大的品类，Doom 排第 8 也很亮眼。进一步查看 Horror 标签中排在 Doom 前面的 7 款游戏，会发现 <a href="https://store.steampowered.com/app/698780/Doki_Doki_Literature_Club/">Doki Doki Literature Club</a> 和 <a href="https://store.steampowered.com/app/264710/Subnautica/">Subnautica</a> 的表现足以压过 Doom 2016，这也说明它们的实际传播和销量规模非常可观。不过 Doki Doki Literature Club 是免费游戏，这种语境也必须被标明。</p>
+<p>文章后半部分提出，数据应该诚实地讲故事。Game Data Crunch 不应该只是把一桶零散事实倒给用户，也不应该滑向过度推测。作者想用数据讲准确且有用的故事。比如 Lair of the Clockwork God 的整体表现数据一般，但评论很好，尤其是相对于它的市场表现而言，它的评分非常突出，因此成为 Steam 上排名第一的“Hidden Gem”。这是一个容易识别的模式：评论分数很高，但市场表现没有爆发。另一个故事来自传统 Roguelike 品类。某款游戏是 Steam 上排名第一的 Traditional Roguelike，可以说是细分类型之王，但它整体表现大约在前 2500 左右。这个成绩已经比普通独立游戏好得多，可一旦拿 Action Roguelike 来对比，品类天花板完全不同。Action Roguelike 的代表 <a href="https://store.steampowered.com/app/113200/The_Binding_of_Isaac/">Binding of Isaac</a> 是巨大热门，销售规模达到数百万份。</p>
+<p>作者并不是建议开发者盲目追逐 Action Roguelike 趋势。他的意思是，数据可以帮开发者睁开眼睛。如果你做 Action Roguelike，就要面对世界级头部作品和拥挤激烈的竞争；如果做 Traditional Roguelike，池塘小一些，竞争也少一些，但问题变成你是否有能力抬高品类天花板，突破前 2500，甚至挑战当前细分王者。Game Data Crunch 的目标正是在这种地方发挥作用：不是为了陈列数据本身，而是帮助开发者提出更好的问题，看清自己的机会、风险和计划。</p>
+    </section>
+    <section class="related-links">
+  <h2>原文提及链接</h2>
+  <ul><li><a href="http://www.gamedatacrunch.com/">www.gamedatacrunch.com</a></li>
+<li><a href="http://new.isthereanydeal.com/">new.isthereanydeal.com</a></li>
+<li><a href="https://new.isthereanydeal.com/game/forager/stats/">Here’s their page for the hit crafting game</a></li>
+<li><a href="https://new.isthereanydeal.com/game/forager/stats/">Forager</a></li>
+<li><a href="https://twitter.com/devolverdigital/status/1298629267811704833?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1298629267811704833%7Ctwgr%5Eshare_3&amp;ref_url=https%3A%2F%2Fpublish.twitter.com%2F%3Fquery%3Dhttps3A2F2Ftwitter.com2Fdevolverdigital2Fstatus2F1298629267811704833widget%3DTweet">7 million units (owners) on Steam according to its pu…</a></li>
+<li><a href="https://twitter.com/EricDiepeveen/status/1298849113962885120">this tweet thread</a></li>
+<li><a href="https://playtracker.net/">Playtracker.net</a></li>
+<li><a href="https://www.gamedatacrunch.com/steam/details?appid=379720">Like this:</a></li>
+<li><a href="http://steamcharts.com/">SteamCharts.com</a></li>
+<li><a href="https://www.gamedatacrunch.com/steam/list?tag=1667">Let’s find out</a></li>
+<li><a href="https://www.gamedatacrunch.com/steam/details?appid=1060600">Check out Lair of the Clockwork God:</a></li>
+<li><a href="https://www.gamedatacrunch.com/steam/details?appid=259680">another story</a></li>
+<li><a href="https://www.gamedatacrunch.com/steam/details?appid=250900">Binding of Isaac</a></li>
+<li><a href="https://twitter.com/larsiusprime">@larsiusprime</a></li>
+<li><a href="http://www.gamedatacrunch.com/">www.GameDataCrunch.com</a></li></ul>
+</section>
+    <div class="bottom-nav"><a class="button ghost" href="248-among-us-the-4-lessons-of-their-viral-success.xhtml">上一篇</a><a class="button" href="../index.xhtml#topics">回到主题目录</a><a class="button ghost" href="250-example-of-a-great-email-signup-form-huge-wishlist-counts-and-why-do-early-acces.xhtml">下一篇</a></div>
+  </article>
+</main>
+</body>
+</html>
